@@ -1,0 +1,17 @@
+{
+    "cSpell.words": [
+        "Radeon",
+        "Ryzen"
+    ],
+    "files.associations": {
+        "ADD.C": "cpp",
+        "typeinfo": "c",
+        "TEST2.C": "cpp",
+        "tempCodeRunnerFile.C": "cpp",
+        "string.h": "c",
+        "stdio.h": "c",
+        "POSTFIX.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "liveServer.settings.port": 5501
+}

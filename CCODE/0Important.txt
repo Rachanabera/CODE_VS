@@ -1,0 +1,97 @@
+link for one shot of C:
+https://www.youtube.com/watch?v=irqbmMNs2Bo
+
+for integer data type variables we use %d.
+
+for double data type variables we use %lf.
+
+for float data type variables we use %f.
+
+int < float < double
+
+FILE IO {
+
+    fopen(): used for opening a file.
+    fclose(): used for closing a file.
+
+    for reading files there are two modes "r" and "rb",
+    "r" is for reading and "rb" is for reading in binary.
+
+    for writing in files there are again two modes,
+    "w" for just writing and "wb" for writing in binary.
+    note that writing in FILE IO means to overwrite in a pre-existing file.
+
+    In order to add on more content in a file,
+    we can use append mode, which is used using "a".
+
+    if we type a name of a non-existing in read mode it show NULL
+    but if its in write mode a new file with the name you typed will be created.
+
+    Syntax:
+    FILE *pointer_name;
+    pointer_name = fopen("file_name","mode");
+
+
+    fscanf(): used for reading from a file.
+
+    Syntax:
+    data_type variable_name;
+    fscanf(pointer_name, format_specifier, &variable_name);
+
+
+    fprintf(): used for writing to a file.
+
+    Syntax:
+    data_type variable_name;
+    fprintf(pointer_name, format_specifier, &variable_name);
+
+
+    fputc(): used to put a character in a file.
+
+    Syntax:
+    fputc('', pointer_name);
+
+
+    fgetc(): used to get a character from file.
+
+    Syntax:
+    char variable_name;
+    variable_name = fgetc(pointer_name);
+}
+
+DMA {
+
+    to use these we have to include stdlib.h
+
+    malloc():
+    Memory Allocation, it Allocate you a block of
+    memory in bytes and returns a pointer of type void.
+
+    Syntax:
+    data_type *ptr;
+    ptr = (castType_to_required_data_type*)malloc(size in bytes);
+
+    calloc():
+    Continuous Allocation, it also Allocate you a
+    block of memory but initializes it with 0, and returns a
+    pointer of type void.
+    
+    Syntax:
+    data_type *ptr;
+    ptr = (castType_to_required_data_type*)calloc(number of memory locations, size in bytes);
+
+    free():
+    It is used to free the memory locations that are Allocated
+    using malloc and calloc, freeing the memory can be done
+    anywhere after it has been Allocated (but it is a good
+    practice to always free the memory at the end of your
+    program if you didn't free it anywhere previously).
+    
+    realloc():
+    It is used to reallocate, that is increase or decrease
+    the memory using the same pointer and size.
+    
+    Syntax:
+    data_type *ptr;
+    ptr = (castType_to_required_data_type*)realloc(pointer_name, size in bytes);
+}

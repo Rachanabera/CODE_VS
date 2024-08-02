@@ -1,0 +1,6 @@
+link for playlist:
+https://youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&si=PxVOdmgH9gCNt4am
+link for documentation for console.log():
+https://developer.mozilla.org/en-US/docs/Web/API/console#examples
+link for typeof doubt watch this video at 17:13 minutes.(look for a star in main2.js):
+https://www.youtube.com/watch?v=hdI2bqOjy3c&t=4484s&ab_channel=TraversyMedia

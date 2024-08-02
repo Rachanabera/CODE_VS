@@ -1,0 +1,13 @@
+This files has some stupid or maybe important instruction,
+for when I forget something and I will keep adding more
+instruction if I require it.
+
+Always open your .html file with live server
+to use the console there.
+
+Open the link.txt to open playlist from which I studied,
+it also has other important links too
+
+AND IF YOU FORGET TO CHANGE LINE 55 OF index.html,
+if you have made a new .js file for some coding 
+you will not see any changes on the console you fucking dumbass nigga
