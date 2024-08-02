@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPS Comparison - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="container">
+  <div id="header">
+    <h1>FPS Comparison</h1>
+  </div>
+
+  <div class="select-box">
+      <label for="gameSelect">Game:</label>
+      <select id="gameSelect" required>
+        <option value="" disabled selected>Select Game</option>
+        <option value="Cyberpunk 2077">Cyberpunk 2077</option>
+        <option value="DOOM Eternal">DOOM Eternal</option>
+        <!-- Add more game options as needed -->
+      </select>
+    </div>
+
+  <div id="selection-container">
+    <div class="select-box">
+      <label for="cpuSelect" ></label><span class="icon"><img data-img="//technicalcity.b-cdn.net/images/cpu.png" src="//technicalcity.b-cdn.net/images/cpu.png" alt=""></span>
+      <select id="cpuSelect" required>
+        <option value="" disabled selected>Select CPU</option>
+        <option value="AMD Ryzen 9 7950X">AMD Ryzen 9 7950X</option>
+        <option value="Intel Core i9-14900K">Intel Core i9-14900K</option>
+        <!-- Add more CPU options as needed -->
+      </select>
+    </div>
+
+    <div class="select-box">
+      <label for="gpuSelect"></label><span class="icon"><img data-img="//technicalcity.b-cdn.net/images/gpu.png" src="//technicalcity.b-cdn.net/images/gpu.png" alt=""></span>
+      <select id="gpuSelect" required>
+        <option value="" disabled selected>Select GPU</option>
+        <option value="AMD Radeon RX 6950 XT">AMD Radeon RX 6950 XT</option>
+        <option value="Nvidia RTX 4090">Nvidia RTX 4090</option>
+        <!-- Add more GPU options as needed -->
+      </select>
+    </div>
+  </div>
+
+  <button onclick="saveSelection()">Continue to FPS Page</button>
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>
