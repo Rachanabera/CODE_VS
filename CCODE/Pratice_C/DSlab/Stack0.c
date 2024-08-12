@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 void push(int *top, int *a, int size);
 void pop(int *top, int *a);
