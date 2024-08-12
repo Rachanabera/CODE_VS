@@ -1,12 +1,12 @@
 #include <stdio.h>
+#define SIZE 2
 
 void push();
 void pop();
 void show();
-
-int const size = 5;
+;
 int top = -1;
-int a[5];
+int a[SIZE];
 
 int main() {
     int c;
@@ -35,7 +35,7 @@ int main() {
 }
 
 void push() {
-    if (top == size - 1) {
+    if (top == SIZE - 1) {
         printf("Stack overflow\n\n");
     } else {
         int value;
