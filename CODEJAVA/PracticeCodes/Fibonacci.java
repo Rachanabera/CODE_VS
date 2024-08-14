@@ -16,7 +16,7 @@ public class Fibonacci {
         for (int i = 0; i < count; i++) {
             System.out.print(fibonacci(i) + " ");
         }
-        System.out.println();  // Move to the next line after the series
+        System.out.println();
     }
 
     public static void main(String[] args) {
