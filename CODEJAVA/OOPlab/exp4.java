@@ -1,5 +1,3 @@
-package OOPlab;
-
 import java.util.*;
 
 public class exp4 {
