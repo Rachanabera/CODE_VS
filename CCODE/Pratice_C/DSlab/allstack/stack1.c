@@ -4,7 +4,7 @@
 void push();
 void pop();
 void show();
-;
+
 int top = -1;
 int a[SIZE];
 
