@@ -1,3 +1,4 @@
+package experiments;
 import java.util.Scanner;
 
 public class exp7 {
