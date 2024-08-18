@@ -1,4 +1,4 @@
-package PracticeCodes;
+package questionBankCodes;
 
 import java.util.*;
 
