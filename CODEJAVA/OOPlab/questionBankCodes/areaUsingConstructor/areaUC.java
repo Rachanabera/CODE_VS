@@ -1,38 +1,56 @@
 package questionBankCodes.areaUsingConstructor;
 
+import java.util.Scanner;
+
 class areaUC {
 	public static void main(String[] args) {
-		onlyarea o = new onlyarea();
-		o.circle();
-		o.square();
-		o.rectangle();
-		o.triangle();
+		double r, b, h;
+        int s, l, w;
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("Enter Radius of Circle:");
+            r = in.nextDouble();
+            
+            System.out.println("Enter Side of Square:");
+            s = in.nextInt();
+            
+            System.out.println("Enter Length and Breadth of Rectangle:");
+            l = in.nextInt();
+            w = in.nextInt();
+            
+            System.out.println("Enter Base and Height of Triangle:");
+            b = in.nextDouble();
+            h = in.nextDouble();
+        }
+		circle o = new circle(r);
+		square o0 = new square(s);
+		rectangle o1 = new rectangle(l, w);
+		triangle o2 = new triangle(b, h);
 	}
 }
 
-class onlyarea {
-	double r, s, l, w, b, h;
-	onlyarea() {
-		r = 10;
-		s = 10;
-		l = 10;
-		w = 10;
-		b = 10;
-		h = 10;
-	}
-	void circle(){
+class circle {
+	circle(double r) {
 		System.out.println("Area of Circle: " + 3.14 * r * r);
 		System.out.println();
 	}
-	void square(){
+}
+
+class square {
+	square(double s) {
 		System.out.println("Area of Square: " + s * s);
 		System.out.println();
 	}
-	void rectangle(){
+}
+
+class rectangle {
+	rectangle(double l, double w) {
 		System.out.println("Area of Rectangle: " + l * w);
 		System.out.println();
 	}
-	void triangle(){
+}
+
+class triangle {
+	triangle(double b, double h) {
 		System.out.println("Area of Triangle: " + 0.5 * b * h);
 		System.out.println();
 	}

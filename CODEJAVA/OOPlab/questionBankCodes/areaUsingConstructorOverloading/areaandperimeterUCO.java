@@ -36,6 +36,7 @@ class Area {
 	Area(double r) {
 		System.out.println("Area of Circle: " + Math.PI * r * r);
 		System.out.println("Perimeter/circumference of Circle: " + 2 * 3.14 * r);
+		System.out.println();
 	}
 
 	Area(int s) {
