@@ -1,38 +1,35 @@
 package questionBankCodes;
 
-import java.util.*;
 class objectPandR {
 	public static void main(String[] args) {
-		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Enter of A:");
-			double n = in.nextDouble();
-			number A = new number(n);
+			number A = new number(10);
+			A.passobject(A);
+
+			number B = A.returnobject();
+
 			A.display('A');
-			
-			System.out.println("Enter real and imaginary parts of B:");
-			double n0 = in.nextDouble();
-			number B = new number(n0);
 			B.display('B');
-			
-			number C = new number();
-			C.sum(A, B);
-		}
 	}
 }
 
 class number {
 	double n;
-	number() {
-		n = 0.0;
-	}
 	number(double n) {
         this.n = n;
 	}
-	void sum(number A, number B) {
-		System.out.println("Result = " + (A.n + B.n));
+	void passobject(number A) {
+		System.out.println("Object A passed as argument, A.n = " + A.n);
+		System.out.println();
 	}
-	void display(char A) {
-		System.out.println(A +" = " + n);
+	number returnobject() {
+		System.out.println("Object C returned as argument to Object B");
+		System.out.println();
+		
+		number C = new number(69);
+		return C;
+	}
+	void display(char c) {
+		System.out.println(c + " = " + n);
 		System.out.println();
 	}
 }
