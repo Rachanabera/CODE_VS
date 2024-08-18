@@ -52,7 +52,7 @@ class areaandperimeter {
 	}
 	void rectangle(){
 		System.out.println("Area of Rectangle: " + l * w);
-		System.out.println("Perimeter of Rectangle: " + 2 * (l * w));
+		System.out.println("Perimeter of Rectangle: " + 2 * (l + w));
 		System.out.println();
 	}
 	void triangle(){
