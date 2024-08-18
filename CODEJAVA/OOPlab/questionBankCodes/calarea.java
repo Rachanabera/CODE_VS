@@ -2,7 +2,7 @@ package questionBankCodes;
 
 import java.util.*;
 
-public class exp3 {
+public class calarea {
 	public static void main(String[] args) {
 		double r, s, l, w , b, h;
 		try (Scanner in = new Scanner(System.in)) {
