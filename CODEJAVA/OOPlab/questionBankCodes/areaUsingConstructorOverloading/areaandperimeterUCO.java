@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class areaandperimeterUCO {
 	public static void main(String[] args) {
-		double r, b, h;
+		double r, a, b, c, h;
 		int s, l, w;
 		try (Scanner in = new Scanner(System.in)) {
 			System.out.println("Enter Radius of Circle:");
@@ -17,8 +17,10 @@ public class areaandperimeterUCO {
 			l = in.nextInt();
 			w = in.nextInt();
 
-			System.out.println("Enter Base and Height of Triangle:");
+			System.out.println("Enter 3 sides and Height of Triangle:");
+			a = in.nextDouble();
 			b = in.nextDouble();
+			c = in.nextDouble();
 			h = in.nextDouble();
 		}
 
@@ -26,7 +28,7 @@ public class areaandperimeterUCO {
 		Area o = new Area(r);
 		Area o0 = new Area(s);
 		Area o1 = new Area(l, w);
-		Area o2 = new Area(b, h);
+		Area o2 = new Area(a, b, c, h);
 	}
 }
 
@@ -48,7 +50,7 @@ class Area {
 		System.out.println();
 	}
 
-	Area(double b, double h) {
+	Area(double a, double b, double c, double h) {
 		System.out.println("Area of Triangle: " + 0.5 * b * h);
 		System.out.println("Perimeter of Triangle: " + (a + b + c));
 		System.out.println();
