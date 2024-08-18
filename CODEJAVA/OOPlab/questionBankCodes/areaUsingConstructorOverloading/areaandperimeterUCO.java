@@ -25,33 +25,33 @@ public class areaandperimeterUCO {
 		}
 
 		// Passing user input to constructors
-		Area o = new Area(r);
-		Area o0 = new Area(s);
-		Area o1 = new Area(l, w);
-		Area o2 = new Area(a, b, c, h);
+		Areas o = new Areas(r);
+		Areas o0 = new Areas(s);
+		Areas o1 = new Areas(l, w);
+		Areas o2 = new Areas(a, b, c, h);
 	}
 }
 
-class Area {
-	Area(double r) {
+class Areas {
+	Areas(double r) {
 		System.out.println("Area of Circle: " + Math.PI * r * r);
 		System.out.println("Perimeter/circumference of Circle: " + 2 * 3.14 * r);
 		System.out.println();
 	}
 
-	Area(int s) {
+	Areas(int s) {
 		System.out.println("Area of Square: " + s * s);
 		System.out.println("Perimeter of Square: " + 4 * s);
 		System.out.println();
 	}
 
-	Area(int l, int w) {
+	Areas(int l, int w) {
 		System.out.println("Area of Rectangle: " + l * w);
 		System.out.println("Perimeter of Rectangle: " + 2 * (l + w));
 		System.out.println();
 	}
 
-	Area(double a, double b, double c, double h) {
+	Areas(double a, double b, double c, double h) {
 		System.out.println("Area of Triangle: " + 0.5 * b * h);
 		System.out.println("Perimeter of Triangle: " + (a + b + c));
 		System.out.println();
