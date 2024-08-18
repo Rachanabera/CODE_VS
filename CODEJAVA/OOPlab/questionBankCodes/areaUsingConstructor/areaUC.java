@@ -21,10 +21,10 @@ class areaUC {
             b = in.nextDouble();
             h = in.nextDouble();
         }
-		circle o = new circle(r);
-		square o0 = new square(s);
-		rectangle o1 = new rectangle(l, w);
-		triangle o2 = new triangle(b, h);
+		new circle(r);
+		new square(s);
+		new rectangle(l, w);
+		new triangle(b, h);
 	}
 }
 

@@ -25,10 +25,10 @@ public class areaandperimeterUCO {
 		}
 
 		// Passing user input to constructors
-		Areas o = new Areas(r);
-		Areas o0 = new Areas(s);
-		Areas o1 = new Areas(l, w);
-		Areas o2 = new Areas(a, b, c, h);
+		new Areas(r);
+		new Areas(s);
+		new Areas(l, w);
+		new Areas(a, b, c, h);
 	}
 }
 

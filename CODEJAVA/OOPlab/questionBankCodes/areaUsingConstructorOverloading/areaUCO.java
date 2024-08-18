@@ -23,10 +23,10 @@ public class areaUCO {
         }
 
         // Passing user input to constructors
-        Area o = new Area(r);
-        Area o0 = new Area(s);
-        Area o1 = new Area(l, w);
-        Area o2 = new Area(b, h);
+        new Area(r);
+        new Area(s);
+        new Area(l, w);
+        new Area(b, h);
     }
 }
 

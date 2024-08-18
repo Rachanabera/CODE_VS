@@ -23,10 +23,10 @@ class areaandperimeterUC {
             c = in.nextDouble();
             h = in.nextDouble();
         }
-		circles o = new circles(r);
-		squares o0 = new squares(s);
-		rectangles o1 = new rectangles(l, w);
-		triangles o2 = new triangles(a, b, c, h);
+		new circles(r);
+		new squares(s);
+		new rectangles(l, w);
+		new triangles(a, b, c, h);
 	}
 }
 
