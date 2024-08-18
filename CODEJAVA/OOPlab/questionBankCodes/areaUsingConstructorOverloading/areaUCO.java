@@ -1,55 +1,53 @@
 package questionBankCodes.areaUsingConstructorOverloading;
 
-class areaUCO {
-	public static void main(String[] args) {
-		onlyarea o = new onlyarea();
-		o.circle();
-		o.square();
-		o.rectangle();
-		o.triangle();
+import java.util.Scanner;
 
-        onlyarea o0 = new onlyarea(69, 69, 69, 69, 69, 69);
-		o0.circle();
-		o0.square();
-		o0.rectangle();
-		o0.triangle();
-	}
+public class areaUCO {
+    public static void main(String[] args) {
+        double r, b, h;
+        int s, l, w;
+        try (Scanner in = new Scanner(System.in)) {
+            System.out.println("Enter Radius of Circle:");
+            r = in.nextDouble();
+            
+            System.out.println("Enter Side of Square:");
+            s = in.nextInt();
+            
+            System.out.println("Enter Length and Breadth of Rectangle:");
+            l = in.nextInt();
+            w = in.nextInt();
+            
+            System.out.println("Enter Base and Height of Triangle:");
+            b = in.nextDouble();
+            h = in.nextDouble();
+        }
+
+        // Passing user input to constructors
+        Area o = new Area(r);
+        Area o0 = new Area(s);
+        Area o1 = new Area(l, w);
+        Area o2 = new Area(b, h);
+    }
 }
 
-class onlyarea {
-	double r, s, l, w, b, h;
-	onlyarea() {
-        System.out.println("Default values:");
-		r = 10;
-		s = 10;
-		l = 10;
-		w = 10;
-		b = 10;
-		h = 10;
-	}
-    onlyarea(double r, double s, double l, double w, double b, double h) {
-        System.out.println("Parameterized values:");
-		this.r = r;
-		this.s = s;
-		this.l = l;
-		this.w = w;
-		this.b = b;
-		this.h = h;
-	}
-	void circle(){
-		System.out.println("Area of Circle: " + 3.14 * r * r);
+class Area {
+    Area(double r) {
+        System.out.println("Area of Circle: " + Math.PI * r * r);
 		System.out.println();
-	}
-	void square(){
-		System.out.println("Area of Square: " + s * s);
+    }
+
+    Area(int s) {
+        System.out.println("Area of Square: " + s * s);
 		System.out.println();
-	}
-	void rectangle(){
-		System.out.println("Area of Rectangle: " + l * w);
+    }
+
+    Area(int l, int w) {
+        System.out.println("Area of Rectangle: " + l * w);
 		System.out.println();
-	}
-	void triangle(){
-		System.out.println("Area of Triangle: " + 0.5 * b * h);
+    }
+
+    Area(double b, double h) {
+        System.out.println("Area of Triangle: " + 0.5 * b * h);
 		System.out.println();
-	}
+    }
 }

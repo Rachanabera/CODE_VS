@@ -1,61 +1,54 @@
 package questionBankCodes.areaUsingConstructorOverloading;
 
-class areaandperimeterUCO {
-	public static void main(String[] args) {
-		areaandperimeter o = new areaandperimeter();
-		o.circle();
-		o.square();
-		o.rectangle();
-		o.triangle();
+import java.util.Scanner;
 
-        areaandperimeter o1 = new areaandperimeter(69, 69, 69, 69, 69, 69, 69, 69);
-		o1.circle();
-		o1.square();
-		o1.rectangle();
-		o1.triangle();
+public class areaandperimeterUCO {
+	public static void main(String[] args) {
+		double r, b, h;
+		int s, l, w;
+		try (Scanner in = new Scanner(System.in)) {
+			System.out.println("Enter Radius of Circle:");
+			r = in.nextDouble();
+
+			System.out.println("Enter Side of Square:");
+			s = in.nextInt();
+
+			System.out.println("Enter Length and Breadth of Rectangle:");
+			l = in.nextInt();
+			w = in.nextInt();
+
+			System.out.println("Enter Base and Height of Triangle:");
+			b = in.nextDouble();
+			h = in.nextDouble();
+		}
+
+		// Passing user input to constructors
+		Area o = new Area(r);
+		Area o0 = new Area(s);
+		Area o1 = new Area(l, w);
+		Area o2 = new Area(b, h);
 	}
 }
 
-class areaandperimeter {
-	double r, s, l, w, a, b, c, h;
-	areaandperimeter() {
-        System.out.println("Default values:");
-		r = 10;
-		s = 10;
-		l = 10;
-		w = 10;
-		a = 10;
-		b = 10;
-		c = 10;
-		h = 10;
-	}
-	areaandperimeter(double r, double s, double l, double w, double a, double b, double c, double h) {
-        System.out.println("Parameterized values:");
-		this.r = r;
-		this.s = s;
-		this.l = l;
-		this.w = w;
-		this.a = a;
-		this.b = b;
-		this.c = c;
-		this.h = h;
-	}
-	void circle(){
-		System.out.println("Area of Circle: " + 3.14 * r * r);
+class Area {
+	Area(double r) {
+		System.out.println("Area of Circle: " + Math.PI * r * r);
 		System.out.println("Perimeter/circumference of Circle: " + 2 * 3.14 * r);
-		System.out.println();
 	}
-	void square(){
+
+	Area(int s) {
 		System.out.println("Area of Square: " + s * s);
 		System.out.println("Perimeter of Square: " + 4 * s);
 		System.out.println();
 	}
-	void rectangle(){
+
+	Area(int l, int w) {
 		System.out.println("Area of Rectangle: " + l * w);
 		System.out.println("Perimeter of Rectangle: " + 2 * (l + w));
 		System.out.println();
 	}
-	void triangle(){
+
+	Area(double b, double h) {
 		System.out.println("Area of Triangle: " + 0.5 * b * h);
 		System.out.println("Perimeter of Triangle: " + (a + b + c));
 		System.out.println();
