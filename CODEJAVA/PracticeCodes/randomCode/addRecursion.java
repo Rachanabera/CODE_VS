@@ -1,7 +1,4 @@
-package PracticeCodes;
-
 import java.util.Scanner;
-
 public class addRecursion {
     public static int add(int n) {
         if (n < 0) {

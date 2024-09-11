@@ -1,4 +1,4 @@
-package PracticeCodes.classaccessing;
+package classAccessing;
 
 import java.util.*;
 

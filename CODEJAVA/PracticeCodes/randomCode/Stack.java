@@ -1,4 +1,3 @@
-package PracticeCodes;
 import java.util.Scanner;
 
 public class Stack {

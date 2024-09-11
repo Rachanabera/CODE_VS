@@ -1,5 +1,3 @@
-package PracticeCodes;
-
 import java.util.Scanner;
 
 public class hNI {

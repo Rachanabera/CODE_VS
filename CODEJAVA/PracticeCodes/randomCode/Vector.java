@@ -1,5 +1,3 @@
-package PracticeCodes;
-
 // Operator Overloading
 
 public class Vector {

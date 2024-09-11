@@ -1,4 +1,3 @@
-package PracticeCodes;
 import java.util.*;
 
 public class armstrongNumber
