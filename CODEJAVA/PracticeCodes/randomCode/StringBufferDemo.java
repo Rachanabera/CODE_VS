@@ -5,7 +5,7 @@ class StringBufferDemo {
         StringBuffer s2 = new StringBuffer(s);
         System.out.println("String s1: " + s1);
         System.out.println("String s2: " + s2);
-        
+
         //TO DISPLAY LENGTH
         System.out.println("Length of String s1: " + s1.length());
         System.out.println("Length of String s2: " + s2.length());
@@ -31,7 +31,7 @@ class StringBufferDemo {
         
         //TO INSERT STRING
         s1.insert(0, "hello");
-        System.out.println("Insert 'hello' at the beginning of String sl: " + s1);
+        System.out.println("Insert 'hello' at the beginning of String s1: " + s1);
         
         //TO REVERSE A STRING
         s1.reverse();
