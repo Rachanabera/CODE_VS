@@ -25,7 +25,6 @@ void push(int n) {
     if (top == SIZE - 1) {
         printf("Stack overflow\n\n");
     } else {
-        int value;
         a[++top] = n;
         printf("Pushed %d in stack.\n", n);
         printf("\n");
