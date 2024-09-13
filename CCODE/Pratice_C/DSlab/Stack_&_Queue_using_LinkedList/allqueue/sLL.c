@@ -133,6 +133,7 @@ struct node* add_after_pos(struct node* head, int data, int pos) {
     return head;
 }
 
+
 struct node* delete_at_beg(struct node *head) {
     if (head == NULL) {
         printf("List is empty\n");
@@ -163,7 +164,7 @@ void delete_at_end(struct node *head) {
 
 struct node* delete_at_pos(struct node *head, int pos) {
     if (head == NULL) {
-        printf("List is empty, can't delete at position %d\n", pos);
+        printf("List is empty, can't add before position %d\n", pos);
         return head;
     }
 
@@ -207,7 +208,7 @@ struct node* delete_before_pos(struct node* head, int pos) {
         printf("List is empty, can't delete before position %d\n", pos);
         return head;
     }
-    
+
     if (pos <= 1) {
         printf("No node exists before position %d\n", pos);
         return head;
@@ -246,7 +247,7 @@ struct node* delete_before_pos(struct node* head, int pos) {
     return head;
 }
 
-struct node* delete_after_pos(struct node* head, int pos) {
+struct node* delete_after_pos(struct node* head, int pos) {    
     if (head == NULL || head->link == NULL) {
         printf("List is too short to delete after position %d\n", pos);
         return head;
@@ -273,11 +274,6 @@ struct node* delete_after_pos(struct node* head, int pos) {
 }
 
 void display(struct node *head) {
-    if (head == NULL) {
-        printf("List is empty\n");
-        return;
-    }
-    printf("List:\n");
     struct node *ptr = head;
     while (ptr != NULL) {   
         printf("%d\n", ptr->data);
@@ -297,76 +293,45 @@ int main() {
     head->link = ptr;
     display(head);
     
-    int choice;
-    while(1)
-    {
-        int data, pos;
-        printf("Press\n1.add at begging\n2.add at end\n3.add at position\n4.add before position\n5.add after position\n6.delete at begging\n7.delete at end\n8.delete at position\n9.delete before position\n10.delete after position\n11.display\n12.exit\n");
-        scanf("%d",&choice);
-        switch(choice)
-        {
-         case 1:
-            printf("Enter data:-");
-            scanf("%d",&data);
-            head = add_beg(head, data);
-            break;
-        case 2:
-            printf("Enter data:-");
-            scanf("%d",&data);
-            add_at_end(head, data);
-            break;
-        case 3:
-            printf("Enter data:-");
-            scanf("%d",&data);
-            printf("Enter position:-");
-            scanf("%d",&pos);
-            head = add_at_pos(head, data, pos);
-            break;
-        case 4:
-            printf("Enter data:-");
-            scanf("%d",&data);
-            printf("Enter position:-");
-            scanf("%d",&pos);
-            head = add_before_pos(head, data, pos);
-            break;
-        case 5:
-            printf("Enter data:-");
-            scanf("%d",&data);
-            printf("Enter position:-");
-            scanf("%d",&pos);
-            head = add_after_pos(head, data, pos);
-            break;
-        case 6:
-            head = delete_at_beg(head);
-            break;
-        case 7:
-            delete_at_end(head);
-            break;
-        case 8:
-            printf("Enter position:-");
-            scanf("%d",&pos);
-            head = delete_at_pos(head, pos);
-            break;
-        case 9:
-            printf("Enter position:-");
-            scanf("%d",&pos);
-            head = delete_before_pos(head, pos);
-            break;
-        case 10:
-            printf("Enter position:-");
-            scanf("%d",&pos);
-            head = delete_after_pos(head, pos);
-            break;
-        case 11:
-            display(head);
-            break;
-        case 12:
-            exit(0);
-            break;
-        default:
-            printf("\nInvalid choice!!");
-            break;
-        }
-    }
+    head = add_beg(head, 3);
+    printf("Insertion at beginning:\n");
+    display(head);
+
+    add_at_end(head, 4);
+    printf("Insertion at end:\n");
+    display(head);
+    
+    head = add_at_pos(head, 5, 1);
+    printf("Insertion at position 1:\n");
+    display(head);
+
+    head = add_before_pos(head, 6, 2);
+    printf("Insertion before position 2:\n");
+    display(head);
+
+    head = add_after_pos(head, 7, 3);
+    printf("Insertion after position 3:\n");
+    display(head);
+
+    head = delete_at_beg(head);
+    printf("Deletion at beginning:\n");
+    display(head);
+
+    delete_at_end(head);
+    printf("Deletion at end:\n");
+    display(head);
+
+    head = delete_at_pos(head, 1);
+    printf("Deletion at position 1:\n");
+    display(head);
+
+    head = delete_before_pos(head, 2);
+    printf("Deletion before position 2:\n");
+    display(head);
+
+    head = delete_after_pos(head, 2);
+    printf("Deletion after position 3:\n");
+    display(head);
+    
     return 0;
 }
