@@ -4,6 +4,7 @@
 void push();
 void pop();
 void show();
+void peek();
 
 int top = -1;
 int a[SIZE];
@@ -11,7 +12,7 @@ int a[SIZE];
 int main() {
     int c;
     while(1) {
-        printf("Press 1 to push,\npress 2 to pop,\nand 3 to show Stack,\npress 4 to stop\n");
+        printf("Press 1 to push,\npress 2 to pop,\npress 3 to show,\npress 4 to peek Stack,\npress 5 to stop.\n");
         scanf("%d", &c);
         printf("\n");
         switch(c) {
@@ -25,6 +26,9 @@ int main() {
                 show();
             break;
             case 4:
+                peek();
+            break;
+            case 5:
                 return 0;
             default:
                 printf("Invalid Input!\n");
@@ -64,5 +68,14 @@ void show() {
             printf("%d ", a[i]);
         }
         printf("\n\n");
+    }
+}
+
+void peek() {
+    if (top == -1) {
+        printf("Stack is empty\n\n");
+    } else {
+        printf("element on top is: %d\n", a[top]);
+        printf("\n");
     }
 }
