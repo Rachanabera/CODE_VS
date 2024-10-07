@@ -1,93 +1,67 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-image: url('signup.jpg');
+    background-color: #f0f2f5;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.form-group {
+    margin-bottom: 15px;
 }
 
 label {
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #333;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 input[type="password"],
 input[type="date"],
 select {
-    margin-bottom: 15px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-input {
-    background-color: rgb(213, 205, 193);
-    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 button {
+    width: 100%;
     padding: 10px;
-    background-color: rgb(159, 117, 75);
-    color: #fff;
+    background-color: #4CAF50;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(75, 41, 17);
-}
-
-.signup {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(134, 100, 63);
-}
-
-.signin {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(134, 100, 63);
-}
-
-select {
-    background-color: rgb(213, 205, 193);
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.buttonsignup {
-    padding: 10px;
-    background-color: rgb(159, 117, 75);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 5px;
-}
-
-.buttonsignup:hover {
-    background-color: rgb(75, 41, 17);
+    background-color: #45a049;
 }
