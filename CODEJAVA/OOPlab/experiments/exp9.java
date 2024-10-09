@@ -12,9 +12,10 @@ class exp9 {
 
 class Student {
 	void Rollno(){
+		int rollNo;
 		System.out.println("Enter the roll no:");
 		Scanner in = new Scanner(System.in);
-                in.nextInt();
+		rollNo = in.nextInt();
 	}
 }
 

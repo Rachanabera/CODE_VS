@@ -48,6 +48,21 @@ public class exp1 {
 			default:
 				System.out.println("Invalid Input!!!");
 			break;
+
+			/*
+				case 0 -> System.out.println("Fail");
+				case 1 -> System.out.println("Fail");
+				case 2 -> System.out.println("Fail");
+				case 3 -> System.out.println("Fail");
+				case 4 -> System.out.println("Fail");
+				case 5 -> System.out.println("Second Class");
+				case 6 -> System.out.println("First Class");
+				case 7 -> System.out.println("Distintion");
+				case 8 -> System.out.println("Distintion");
+				case 9 -> System.out.println("Distintion");
+				case 10 -> System.out.println("Distintion");
+				default -> System.out.println("Invalid Input!!!");
+			 */
 		}
 	}
 }
