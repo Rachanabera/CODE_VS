@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color:rgb(39, 39, 39);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,10 +11,11 @@ body {
 h1 {
   margin-bottom: 20px;
   text-align: center;
+  color: white;
 }
 
 form {
-  background-color: #fff;
+  background-color: rgb(29, 29, 29);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,6 +28,7 @@ input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  color: gray;
 }
 
 button {
