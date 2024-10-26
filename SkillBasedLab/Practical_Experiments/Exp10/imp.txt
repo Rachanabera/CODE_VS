@@ -1,0 +1,5 @@
+run "node server.js"
+
+then ctrl+click this "http://localhost:3000" from this below line that come in the terminal
+
+Server running on http://localhost:3000

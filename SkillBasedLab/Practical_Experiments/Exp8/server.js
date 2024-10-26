@@ -6,7 +6,7 @@ const PORT = 5000;
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/testdb', {
+mongoose.connect('mongodb://localhost:27017/exp8', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
