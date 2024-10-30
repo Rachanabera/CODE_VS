@@ -10,7 +10,15 @@
         "tempCodeRunnerFile.C": "cpp",
         "string.h": "c",
         "stdio.h": "c",
-        "POSTFIX.C": "cpp"
+        "POSTFIX.C": "cpp",
+        "TOH.C": "cpp",
+        "STACK.C": "cpp",
+        "EXP6.C": "cpp",
+        "EXP7_1.C": "cpp",
+        "EXP7_2.C": "cpp",
+        "EXP5.C": "cpp",
+        "EXP8.C": "cpp",
+        "EXP9.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501
