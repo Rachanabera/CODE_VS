@@ -32,15 +32,19 @@ void dequeue() {
 }
 
 void display() {
-    if(front == -1 && rear == -1) {
+    if (front == -1 && rear == -1) {
         printf("Queue is Empty.\n");
     } else {
         int i = front;
-        while(i != rear) {
-            printf("Queue Element [%d] is %d.\n",i,Q[i]);
-            i = (i+1)%N;
+        printf("Queue elements are: ");
+        while (1) {
+            printf("%d ", Q[i]);
+            if (i == rear) {
+                break;
+            }
+            i = (i + 1) % N;
         }
-        printf("Queue Element rear is %d.\n",Q[rear]);
+        printf("\n");
     }
 }
 
