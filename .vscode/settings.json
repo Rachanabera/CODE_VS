@@ -18,7 +18,8 @@
         "EXP7_2.C": "cpp",
         "EXP5.C": "cpp",
         "EXP8.C": "cpp",
-        "EXP9.C": "cpp"
+        "EXP9.C": "cpp",
+        "DFS.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501
