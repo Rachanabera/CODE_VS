@@ -28,7 +28,6 @@ int main()
                 scanf("%d", &value);
                 push(stack, value);
             break;
-
             case 2:
                 value = pop(stack);
                 if(value != -1)
