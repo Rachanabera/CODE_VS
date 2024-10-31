@@ -20,7 +20,13 @@
         "EXP8.C": "cpp",
         "EXP9.C": "cpp",
         "DFS.C": "cpp",
-        "QUEUE.C": "cpp"
+        "QUEUE.C": "cpp",
+        "SINGLYLL.C": "cpp",
+        "CIRCULARQUEUE.C": "cpp",
+        "BST.C": "cpp",
+        "BFS.C": "cpp",
+        "QUICKSORT.C": "cpp",
+        "HASH.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501
