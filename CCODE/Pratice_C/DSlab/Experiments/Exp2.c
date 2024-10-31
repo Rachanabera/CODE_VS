@@ -34,7 +34,6 @@ int main()
                 if(value != -1)
                     printf("\n The value deleted from stack is: %d", value);
             break;
-
             case 3:
                 display(stack);
             break;
