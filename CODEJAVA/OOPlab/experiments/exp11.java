@@ -36,7 +36,7 @@ class Two extends Thread
  }
 }
 
-class exp11
+public class exp11
 {
  public static void main(String args[])
  {
