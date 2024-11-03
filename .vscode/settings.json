@@ -33,7 +33,8 @@
         "BINARYSEARCH.C": "cpp",
         "BINARY_S.C": "cpp",
         "EXP5_BEG.C": "cpp",
-        "EXP5_END.C": "cpp"
+        "EXP5_END.C": "cpp",
+        "EXP6_ADEEBA.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501

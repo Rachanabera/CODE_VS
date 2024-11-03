@@ -3,7 +3,7 @@
 # define N 5
 int main()
 {
-	int i, j, f, in = 0, c = 0;
+	int i, j, f, c = 0;
 	int a[N];
 	int first = 0, mid = 0, last = N-1;
 	clrscr();
