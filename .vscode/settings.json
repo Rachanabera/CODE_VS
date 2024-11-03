@@ -26,7 +26,8 @@
         "BST.C": "cpp",
         "BFS.C": "cpp",
         "QUICKSORT.C": "cpp",
-        "HASH.C": "cpp"
+        "HASH.C": "cpp",
+        "STACK0.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501

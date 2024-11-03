@@ -2,89 +2,69 @@
 #include <conio.h>
 # define MAX 5
 
-int stack[MAX], top=-1;
+int stack[MAX], top = -1;
 
-void push(int stack[], int val);
-int pop(int stack[]);
+void push(int stack[]);
+void pop(int stack[]);
 void display(int stack[]);
 
-int main()
-{
-    int value, option;
-    clrscr();
-    do
-    {
-        printf("\n *****MAIN MENU*****");
-        printf("\n 1. PUSH");
-        printf("\n 2. POP");
-        printf("\n 3. DISPLAY");
-        printf("\n 4. EXIT");
-        printf("\n Enter your option: ");
-        scanf("%d", &option);
-        switch(option)
-        {
-            case 1:
-                printf("\n Enter the number to be pushed on stack: ");
-                scanf("%d", &value);
-                push(stack, value);
-            break;
-            case 2:
-                value = pop(stack);
-                if(value != -1)
-                    printf("\n The value deleted from stack is: %d", value);
-            break;
-            case 3:
-                display(stack);
-            break;
-            case 4:
-                return 0;
-            break;
-            default:
-                printf("Invalid Input!!!");
-            break;
-        }
-    }while(option != 4);
-    getch();
-    return 0;
+int main(){
+	int c = 0;
+	//clrscr();
+	while(1) {
+		printf("****Menu****\n1.Push,\n2.Pop,\n3.Display,\n4.Exit.\nEnter your choice:\n");
+		scanf("%d", &c);
+		switch(c) {
+			case 1:
+				push(stack);
+			break;
+			case 2:
+				pop(stack);
+			break;
+			case 3:
+				display(stack);
+			break;
+			case 4:
+				return 0;
+			break;
+			default:
+				printf("Invalid Input!!!!!\n");
+			break;
+		}
+	}
 }
 
-
-void push(int stack[], int value)
-{
-    if(top == MAX-1) {
-        printf("\n STACK OVERFLOW");
-    } else {
-        top++;
-        stack[top] = value;
-    }
+void push(int stack[]) {
+	int v = 0;
+	if(top == MAX-1) {
+		printf("Stack Overflow!!!\n");
+	} else {
+		printf("Enter a value:\n");
+		scanf("%d", &v);
+		top++;
+		stack[top] = v;
+	}
 }
 
-
-int pop(int stack[])
-{
-    int value;
-    if(top == -1) {
-        printf("\n STACK UNDERFLOW");
-        return -1;
-    } else {
-        value = stack[top];
-        top--;
-        return value;
-    }
+void pop(int stack[]) {
+	int v;
+	if(top == -1) {
+		printf("Stack Underflow!!!\n");
+	} else {
+		v = stack[top];
+		top--;
+		printf("Deleted value is: %d\n", v);
+	}
 }
 
-
-
-
-void display(int stack[])
-{
-    int i;
-    if(top == -1) {
-        printf("\n STACK IS EMPTY");
-    } else {
-        for(i=top;i>=0;i--) {
-            printf("\n %d",stack[i]);
-        }
-        printf("\n"); 
-    }
+void display(int stack[]) {
+	int i = 0;
+	if(top == -1) {
+		printf("Stack is Empty!!!\n");
+	} else {
+		for(i=top;i>-1;i--){
+			printf("\n%d", stack[i]);
+		}
+		printf("\n");
+	}
 }
