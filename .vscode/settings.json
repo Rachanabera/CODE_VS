@@ -31,7 +31,9 @@
         "STACK[1].C": "cpp",
         "EXP4.C": "cpp",
         "BINARYSEARCH.C": "cpp",
-        "BINARY_S.C": "cpp"
+        "BINARY_S.C": "cpp",
+        "EXP5_BEG.C": "cpp",
+        "EXP5_END.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501
