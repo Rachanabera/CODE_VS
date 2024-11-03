@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
+#include <math.h>
 #define MAX_SIZE 100
 
 int stack[MAX_SIZE];  
@@ -26,7 +27,7 @@ int pop() {
 }  
 
 int is_operator(char symbol) {  
-    if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/') {  
+    if (symbol == '+' || symbol == '-' || symbol == '*' || symbol == '/' || symbol == '^') {  
         return 1;  
     }  
     return 0;  
@@ -57,7 +58,10 @@ int evaluate(char* expression) {
 		        break;  
                 case '/': 
 			        result = operand1 / operand2; 
-		        break;  
+		        break;
+                case '^':
+                    result = pow(operand1, operand2);
+                break;  
             }
             push(result);  
         }  else if (symbol != ' ') {
@@ -71,7 +75,7 @@ int evaluate(char* expression) {
 }  
   
 int main() {  
-	char expression[] = "5 6 7 + * 8 +";  
+	char expression[] = "6 2 3 + - 3 8 2 / + * 2 ^ 3 +";  
 	//clrscr();
     printf("Result= %d\n", evaluate(expression));  
 	getch();  
