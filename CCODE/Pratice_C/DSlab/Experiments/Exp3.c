@@ -47,16 +47,16 @@ int evaluate(char* expression) {
             operand1 = pop();  
             switch(symbol) {  
                 case '+': 
-			        result = operand2 + operand1; 
+			        result = operand1 + operand2; 
 		        break;  
                 case '-': 
-			        result = operand2 - operand1; 
+			        result = operand1 - operand2; 
 		        break;  
                 case '*': 
-			        result = operand2 * operand1; 
+			        result = operand1 * operand2; 
 		        break;  
                 case '/': 
-			        result = operand2 / operand1; 
+			        result = operand1 / operand2; 
 		        break;  
             }
             push(result);  
@@ -72,7 +72,7 @@ int evaluate(char* expression) {
   
 int main() {  
 	char expression[] = "5 6 7 + * 8 +";  
-	clrscr();
+	//clrscr();
     printf("Result= %d\n", evaluate(expression));  
 	getch();  
 	return 0;
