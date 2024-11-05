@@ -1,32 +1,22 @@
 import java.util.*;
 
-class exp9 {
+class academinmarks {
 	public static void main(String[] args){
 		TotalMarks t = new TotalMarks();
-		t.Rollno();
 		t.SemMarks();
 		t.Printsports();
 		t.finalMarks();
 	}
 }
 
-class Student {
-	void Rollno(){
-		int rollNo;
-		System.out.println("Enter the roll no:");
-		Scanner in = new Scanner(System.in);
-		rollNo = in.nextInt();
-	}
-}
-
-class Marks extends Student {
-	static int sem1;
-	static int sem2;
+class Marks {
+	static double sem1;
+	static double sem2;
 	void SemMarks() {
 		System.out.println("Enter sem1 and sem2 Marks:");
 		Scanner in = new Scanner(System.in);
-		sem1 = in.nextInt();
-		sem2 = in.nextInt();
+		sem1 = in.nextDouble();
+		sem2 = in.nextDouble();
 	}
 }
 
@@ -40,7 +30,7 @@ class TotalMarks extends Marks implements Sports {
 		System.out.println("The sports marks are:" + smarks);
 	}
 	void finalMarks() {
-		double result = ((sem1 + sem2)/2) + smarks;
+		double result = ((sem1 + sem2)/2.0) + smarks;
 		System.out.println("The sem1 marks are: " + sem1);
 		System.out.println("The sem2 marks are: " + sem2);
 		System.out.println("The final marks are: " + result);

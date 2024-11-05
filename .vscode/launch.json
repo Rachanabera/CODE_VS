@@ -1,0 +1,399 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "exp1",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp1",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp10",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp10",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp11",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp11",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp12",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp12",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp2",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp2",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp3",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp3",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp4",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp4",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp5",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp5",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp6",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp6",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp7",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp7",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "exp9",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.experiments.exp9",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Q1_transposeOfMatrix",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.matrix.Q1_transposeOfMatrix",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Q2_columnAdditionOfMatrix",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.matrix.Q2_columnAdditionOfMatrix",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Q3_diagonalAdditionOfMatrix",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.matrix.Q3_diagonalAdditionOfMatrix",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Q4_multiplicationOfMatrix",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.matrix.Q4_multiplicationOfMatrix",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Q5_arraySearch",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.matrix.Q5_arraySearch",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Q6_sortArrayAscending",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.matrix.Q6_sortArrayAscending",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "calculatearea",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.practicals_question.calculatearea",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "circle",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.practicals_question.circle",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "complexnumber",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.practicals_question.complexnumber",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "palindrome",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.practicals_question.palindrome",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "prime",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.practicals_question.prime",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "switchcase",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.practicals_question.switchcase",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "transpose",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.practicals_question.transpose",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "AIMLqbQ1c",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.AIMLqbQ1c",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "calarea",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.area.calarea",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "calareaMO",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.area.calareaMO",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "areaUC",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.areaUsingConstructor.areaUC",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "areaandperimeterUC",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.areaUsingConstructor.areaandperimeterUC",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "areaUCO",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.areaUsingConstructorOverloading.areaUCO",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "areaandperimeterUCO",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.areaUsingConstructorOverloading.areaandperimeterUCO",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.forRecursion.Factorial",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.forRecursion.Fibonacci",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "countdigits",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.forRecursion.countdigits",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "objectPandR",
+            "request": "launch",
+            "mainClass": "CODEJAVA.OOPlab.questionBankCodes.objectPandR",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "calculate",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.classAccessing.calculate",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Stack",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.randomCode.Stack",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "StringBufferDemo",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.randomCode.StringBufferDemo",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "StringDemo",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.randomCode.StringDemo",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "Vector",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.randomCode.Vector",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "addRecursion",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.randomCode.addRecursion",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "armstrongNumber",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.randomCode.armstrongNumber",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "hNI",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.randomCode.hNI",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "hasNextInt",
+            "request": "launch",
+            "mainClass": "CODEJAVA.PracticeCodes.randomCode.hasNextInt",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "CODEJAVA.allTestCodes.test",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "test0",
+            "request": "launch",
+            "mainClass": "CODEJAVA.allTestCodes.test0",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "test1",
+            "request": "launch",
+            "mainClass": "CODEJAVA.allTestCodes.test1",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "test2",
+            "request": "launch",
+            "mainClass": "CODEJAVA.allTestCodes.test2",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "test3",
+            "request": "launch",
+            "mainClass": "CODEJAVA.allTestCodes.test3",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "volofs",
+            "request": "launch",
+            "mainClass": "CODEJAVA.allTestCodes.volofs",
+            "projectName": "CODE_VS_f049d5b6"
+        },
+        {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "CODEJAVA.hello",
+            "projectName": "CODE_VS_f049d5b6"
+        }
+    ]
+}
