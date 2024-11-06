@@ -34,7 +34,20 @@
         "BINARY_S.C": "cpp",
         "EXP5_BEG.C": "cpp",
         "EXP5_END.C": "cpp",
-        "EXP6_ADEEBA.C": "cpp"
+        "EXP6_ADEEBA.C": "cpp",
+        "TOH_1.C": "cpp",
+        "SLLEND.C": "cpp",
+        "STACK_1.C": "cpp",
+        "CIRCLEQ.C": "cpp",
+        "SLL_BEG.C": "cpp",
+        "SLL_END.C": "cpp",
+        "BST_PRE.C": "cpp",
+        "BST_IN.C": "cpp",
+        "BST_POST.C": "cpp",
+        "BST_S.C": "cpp",
+        "BINARY.C": "cpp",
+        "HASHTBL.C": "cpp",
+        "BINARYSE.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501
