@@ -1,0 +1,7 @@
+{
+  "_id": {
+    "$oid": "670bee03ba7cbbf948ec2d3a"
+  },
+  "email": "zaid@gmail.com",
+  "password": "1234"
+}
