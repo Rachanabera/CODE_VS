@@ -140,7 +140,7 @@ struct node* delete_at_beg(struct node *head) {
     } else {
         struct node *ptr = head;
         printf("Deleted element is %d\n", head->data);
-        head = head->link;
+        head = ptr->link;
         free(ptr);
     }
     return head;
