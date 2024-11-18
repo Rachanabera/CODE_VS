@@ -173,11 +173,6 @@ struct node* delete_at_pos(struct node *head, int pos) {
         return head;
     }
 
-    if (head == NULL) {
-        printf("List is empty\n");
-        return head;
-    }
-
     if (pos == 1) {
         head = delete_at_beg(head);
         return head;

@@ -139,7 +139,7 @@ struct node* delete_at_beg(struct node *head) {
     } else {
         struct node *ptr = head;
         printf("Deleted element is %d\n", head->data);
-        head = head->link;
+        head = ptr->link;
         free(ptr);
     }
     return head;
@@ -169,11 +169,6 @@ struct node* delete_at_pos(struct node *head, int pos) {
 
     if (pos < 1) {
         printf("Invalid position\n");
-        return head;
-    }
-
-    if (head == NULL) {
-        printf("List is empty\n");
         return head;
     }
 
@@ -301,7 +296,7 @@ int main() {
     while(1)
     {
         int data, pos;
-        printf("Press\n1.add at begging\n2.add at end\n3.add at position\n4.add before position\n5.add after position\n6.delete at begging\n7.delete at end\n8.delete at position\n9.delete before position\n10.delete after position\n11.display\n12.exit\n");
+        printf("Press\n1.add at begging\n2.add at end\n3.add at position\n4.add before position\n5.add after position\n6.delete at begging\n7.delete at end\n8.delete at position\n9.delete before position\n10.delete after position\n11.display\n12.exit\nEnter your choice:-");
         scanf("%d",&choice);
         switch(choice)
         {
