@@ -6,9 +6,9 @@ struct node {
     struct node *link;
 };
 
-struct node* add_beg(struct node* head, int d) {
+struct node* add_beg(struct node* head, int data) {
     struct node *ptr = malloc(sizeof(struct node));
-    ptr->data = d;
+    ptr->data = data;
     ptr->link = head;
     head = ptr;
     return head;
