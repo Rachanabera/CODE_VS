@@ -23,7 +23,7 @@ void push(int val) {
     printf("Pushed: %d\n", val);
 }
 
-int pop() {
+void pop() {
     if (top == NULL) {
         printf("Stack is empty\n");
         return -1;  // Return a sentinel value to indicate empty stack
@@ -35,7 +35,6 @@ int pop() {
     free(temp);
     
     printf("Popped: %d\n", popped_value);
-    return popped_value;
 }
 
 void printList() {
