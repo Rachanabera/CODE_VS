@@ -48,7 +48,8 @@
         "BINARY.C": "cpp",
         "HASHTBL.C": "cpp",
         "BINARYSE.C": "cpp",
-        "s1.C": "cpp"
+        "s1.C": "cpp",
+        "stdlib.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "liveServer.settings.port": 5501
