@@ -1,3 +1,4 @@
+package EndSem;
 class A extends Thread {
     public void foo() {
         System.out.println("foo");

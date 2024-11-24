@@ -1,3 +1,4 @@
+package EndSem;
 import java.util.*;
 class dividebynum {
   public static void dividebynum(double m,double n){
