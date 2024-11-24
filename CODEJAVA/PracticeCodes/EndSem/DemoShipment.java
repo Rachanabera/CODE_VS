@@ -1,4 +1,3 @@
-package EndSem;
 class Box {
     double width, height, depth;
 
