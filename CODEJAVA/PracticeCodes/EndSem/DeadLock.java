@@ -4,8 +4,8 @@ class A extends Thread {
     }
     public void run() {
         try {
-            foo();
             Thread.sleep(1000);
+            foo();
         } catch (InterruptedException e) {
             System.out.println(e);
         }
@@ -18,8 +18,8 @@ class B extends Thread {
     }
     public void run() {
         try {
-            bar();
             Thread.sleep(1000);
+            bar();
         } catch (InterruptedException e) {
             System.out.println(e);
         }
