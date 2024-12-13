@@ -10,7 +10,8 @@ if a > b:
 x = int(input("Enter a number: "));
 
 for i in range(10, 20):
-    if i == x:
+    if x == i:
         print("In range");
-    else:
-        print("Out of range");
+        break;
+else:
+    print("Out of range");
